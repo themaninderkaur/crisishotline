@@ -1,0 +1,12 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .star-rating .star {
+    cursor: pointer;
+    color: #d1d5db;
+  }
+  
+  .star-rating .star.filled {
+    color: #f59e0b;
+  }
