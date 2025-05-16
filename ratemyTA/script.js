@@ -1,5 +1,5 @@
-// Sample TA data (in a real app, this would come from a database)
-let tas = [
+// Load TA data from localStorage or initialize with sample data
+let tas = JSON.parse(localStorage.getItem('tas')) || [
     { name: "Jane Smith", course: "CS101", rating: 4.5, reviews: [{ rating: 5, comment: "Amazing TA, very helpful!" }, { rating: 4, comment: "Good explanations but sometimes late." }] },
     { name: "John Doe", course: "MATH202", rating: 3.8, reviews: [{ rating: 4, comment: "Solid TA, knows the material." }, { rating: 3, comment: "Could be more engaging." }] }
   ];
@@ -72,6 +72,9 @@ let tas = [
     // Add review
     ta.reviews.push({ rating: parseInt(rating), comment });
     ta.rating = (ta.reviews.reduce((sum, r) => sum + r.rating, 0) / ta.reviews.length).toFixed(1);
+  
+    // Save to localStorage
+    localStorage.setItem('tas', JSON.stringify(tas));
   
     // Reset form
     reviewForm.reset();
