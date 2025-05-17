@@ -1,0 +1,29 @@
+[
+    {
+      "name": "Jane Smith",
+      "course": "CS101",
+      "rating": 4.5,
+      "reviews": [
+        { "rating": 5, "comment": "Amazing TA, very helpful!" },
+        { "rating": 4, "comment": "Good explanations but sometimes late." }
+      ]
+    },
+    {
+      "name": "John Doe",
+      "course": "MATH202",
+      "rating": 3.8,
+      "reviews": [
+        { "rating": 4, "comment": "Solid TA, knows the material." },
+        { "rating": 3, "comment": "Could be more engaging." }
+      ]
+    },
+    {
+      "name": "Alice Johnson",
+      "course": "PHYS101",
+      "rating": 4.2,
+      "reviews": [
+        { "rating": 4, "comment": "Very clear in lab sessions." },
+        { "rating": 4, "comment": "Helpful during office hours." }
+      ]
+    }
+  ]
