@@ -1,7 +1,7 @@
 [
     {
       "name": "Jane Smith",
-      "course": "CS101",
+      "course": "CS102",
       "rating": 4.5,
       "reviews": [
         { "rating": 5, "comment": "Amazing TA, very helpful!" },
