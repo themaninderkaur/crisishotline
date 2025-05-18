@@ -1,1 +1,29 @@
+<div class="coffee-steam-container flex justify-center mb-6">
+    <div class="coffee-cup relative w-24 h-24">
+        <!-- Cup body -->
+        <div class="absolute bottom-0 w-20 h-16 bg-amber-800 rounded-b-lg rounded-t-sm border-2 border-amber-900"></div>
+        <!-- Coffee liquid -->
+        <div class="absolute bottom-4 w-16 h-8 bg-amber-900 left-2 rounded-t-sm"></div>
+        <!-- Cup handle -->
+        <div class="absolute right-0 bottom-4 w-8 h-8 border-2 border-amber-900 rounded-full"></div>
+        <!-- Steam -->
+        <div class="steam steam1 absolute w-2 h-4 bg-gray-300 rounded-full left-8 -top-4 opacity-0"></div>
+        <div class="steam steam2 absolute w-2 h-4 bg-gray-300 rounded-full left-12 -top-2 opacity-0"></div>
+        <div class="steam steam3 absolute w-2 h-4 bg-gray-300 rounded-full left-10 -top-6 opacity-0"></div>
+    </div>
+</div>
 
+<style>
+    .steam {
+        animation: rise 2s infinite ease-in-out;
+    }
+    .steam1 { animation-delay: 0s; }
+    .steam2 { animation-delay: 0.5s; }
+    .steam3 { animation-delay: 1s; }
+
+    @keyframes rise {
+        0% { transform: translateY(0); opacity: 0; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(-20px); opacity: 0; }
+    }
+</style>
