@@ -1,0 +1,77 @@
+.container {
+    @apply bg-white p-8 rounded-lg shadow-lg w-full max-w-md;
+}
+
+.coffee-steam-container, .latte-container {
+    @apply flex justify-center mb-6;
+}
+
+.coffee-cup, .latte-cup {
+    @apply relative w-24 h-24;
+}
+
+.cup-body {
+    @apply absolute bottom-0 w-20 h-16 bg-amber-800 rounded-b-lg rounded-t-sm border-2 border-amber-900;
+}
+
+.coffee-liquid {
+    @apply absolute bottom-4 w-16 h-8 bg-amber-900 left-2 rounded-t-sm;
+}
+
+.cup-handle {
+    @apply absolute right-0 bottom-4 w-8 h-8 border-2 border-amber-900 rounded-full;
+}
+
+.latte-cup .cup-body {
+    @apply bg-amber-100 border-amber-200;
+}
+
+.latte-liquid {
+    @apply absolute bottom-4 w-16 h-8 bg-amber-300 left-2 rounded-t-sm;
+}
+
+.latte-art-base {
+    @apply absolute bottom-8 left-6 w-8 h-4 bg-amber-600 rounded-full;
+}
+
+.latte-art-circle1 {
+    @apply absolute bottom-6 left-5 w-4 h-4 bg-amber-100 rounded-full border-2 border-amber-600;
+}
+
+.latte-art-circle2 {
+    @apply absolute bottom-6 left-9 w-4 h-4 bg-amber-100 rounded-full border-2 border-amber-600;
+}
+
+.latte-cup .cup-handle {
+    @apply border-amber-200;
+}
+
+.steam {
+    @apply absolute w-2 h-4 bg-gray-300 rounded-full opacity-0;
+}
+
+.steam1 {
+    @apply left-8 -top-4;
+}
+
+.steam2 {
+    @apply left-12 -top-2;
+}
+
+.steam3 {
+    @apply left-10 -top-6;
+}
+
+.steam {
+    animation: rise 2s infinite ease-in-out;
+}
+
+.steam1 { animation-delay: 0s; }
+.steam2 { animation-delay: 0.5s; }
+.steam3 { animation-delay: 1s; }
+
+@keyframes rise {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { transform: translateY(-20px); opacity: 0; }
+}
